@@ -27,6 +27,10 @@ function selectRandomEntry(ranEntryNumbers) {
 }
 
 // Code your oxygenExpended function here:
+function oxygenExpended (o2Used){
+let oxygenUsed = 
+
+}
 
 
 // Candidate data & crew array.
@@ -74,3 +78,6 @@ let candidateF = {
 };
 
 let crew = [candidateA,candidateC,candidateE];
+
+
+console.log(candidateA.o2Used(5));
