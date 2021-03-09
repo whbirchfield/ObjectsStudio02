@@ -14,7 +14,17 @@ let  time = (orbitRadius * numberOfOrbits / orbitalSpeed);
 console.log(missionDuration(numberOfOrbits, orbitCircumference(orbitRadius), orbitalSpeed));
 console.log(`The mission will travel ${orbitRadius * numberOfOrbits} km around the planet, and it will take ${missionDuration(numberOfOrbits, orbitCircumference(orbitRadius), orbitalSpeed)} hours to complete.`);
 // Copy/paste your selectRandomEntry function here:
-
+function selectRandomEntry(ranEntryNumbers) {
+  let randomNumbers = [];
+  while (randomNumbers.length < 3) {
+  let  numberSelected = Math.floor(Math.random() * ranEntryNumbers.length);
+    if (randomNumbers.includes(ranEntryNumbers[numberSelected])){
+      numberSelected = Math.floor(Math.random() * ranEntryNumbers.length);  
+    } else{
+    randomNumbers.push(ranEntryNumbers[numberSelected]);
+    }
+  }return randomNumbers;
+}
 
 // Code your oxygenExpended function here:
 
